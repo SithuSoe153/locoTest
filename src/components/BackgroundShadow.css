@@ -1,0 +1,108 @@
+.total-active-users {
+  position: relative;
+  line-height: 22px;
+  font-weight: 600;
+}
+.user-value-icon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  min-height: 24px;
+}
+.count-value {
+  position: relative;
+  line-height: 22px;
+  font-weight: 600;
+}
+.count-label,
+.value-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.count-label {
+  flex-direction: column;
+  padding: var(--padding-12xs) 0 0;
+}
+.value-container {
+  flex-direction: row;
+  gap: var(--gap-5xs);
+}
+.installed-statistics {
+  position: relative;
+  font-size: var(--font-size-13xl);
+  line-height: 48px;
+  font-weight: 700;
+}
+.user-number {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.svg-icon34 {
+  height: 36px;
+  width: 60px;
+  position: relative;
+  object-fit: cover;
+}
+.container264 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 36px;
+}
+.download-statistics {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.backgroundshadow7,
+.download-statistics,
+.user-count {
+  display: flex;
+  align-items: flex-start;
+}
+.user-count {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.backgroundshadow7 {
+  flex: 1;
+  box-shadow: 0 0 2px rgba(145, 158, 171, 0.2),
+    0 12px 24px -4px rgba(145, 158, 171, 0.12);
+  border-radius: var(--br-base);
+  background-color: var(--muicom-nero);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-5xl) var(--padding-4xl) var(--padding-5xl)
+    var(--padding-5xl);
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  min-width: 243px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--muicom-inter-bold-14-size);
+  color: var(--muicom-ebony-clay);
+  font-family: var(--muicom-public-sans-bold-12-title);
+}
+@media screen and (max-width: 975px) {
+  .installed-statistics {
+    font-size: var(--font-size-7xl);
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .installed-statistics {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+  .user-count {
+    flex-wrap: wrap;
+  }
+}
